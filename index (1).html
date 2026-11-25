@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[STUDIO NAME] · Hall Monitor</title>
+<meta name="description" content="[STUDIO NAME] makes Hall Monitor, an idle shooter for Android.">
+<!-- Google Search Console: if you verify with the "HTML tag" method, paste its <meta name="google-site-verification" ...> line right here. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#080b10; --panel:#0e1219; --line:#1d2433; --text:#eef1f8; --dim:#9aa6bb; --gold:#ffcc40; --cyan:#73d9ff; --pink:#ff6fd0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 Inter, system-ui, sans-serif; }
+  a { color:var(--cyan); }
+  a:hover { color:#b5ecff; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-top:18px; padding-bottom:18px; flex-wrap:wrap; }
+  .brand { font-family:"Russo One", sans-serif; font-size:20px; letter-spacing:1px; color:var(--text); text-decoration:none; }
+  nav a { margin-left:18px; color:var(--dim); text-decoration:none; font-weight:600; }
+  nav a:hover { color:var(--text); }
+  .hero { padding:72px 0 56px; position:relative; overflow:hidden; }
+  .hall { position:absolute; inset:0; z-index:0; opacity:.55; pointer-events:none;
+          background:
+            linear-gradient(to bottom, transparent 0 55%, rgba(8,11,16,.0) 55%),
+            repeating-linear-gradient(90deg, transparent 0 78px, rgba(115,217,255,.07) 78px 80px),
+            radial-gradient(ellipse at 50% 120%, rgba(255,111,208,.20), transparent 60%),
+            radial-gradient(ellipse at 50% -20%, rgba(115,217,255,.18), transparent 60%); }
+  .hero .wrap { position:relative; z-index:1; }
+  .tag { display:inline-block; font-size:13px; font-weight:600; color:var(--gold); border:1px solid rgba(255,204,64,.4); border-radius:999px; padding:4px 12px; margin-bottom:18px; }
+  h1 { font-family:"Russo One", sans-serif; font-size:clamp(36px, 7vw, 64px); line-height:1.05; margin:0 0 16px; letter-spacing:1px; }
+  h1 span { color:var(--gold); }
+  .lead { font-size:19px; color:#cdd5e3; max-width:620px; margin:0 0 28px; }
+  .btn { display:inline-block; font-family:"Russo One", sans-serif; letter-spacing:.5px; background:var(--gold); color:#1a1400; text-decoration:none; padding:14px 22px; border-radius:12px; }
+  .btn:hover { color:#1a1400; filter:brightness(1.08); }
+  .btn.ghost { background:transparent; color:var(--text); border:1px solid var(--line); margin-left:10px; }
+  section { padding:44px 0; border-top:1px solid var(--line); }
+  h2 { font-family:"Russo One", sans-serif; font-size:24px; margin:0 0 16px; letter-spacing:.5px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card h3 { margin:0 0 6px; font-size:16px; color:var(--cyan); }
+  .card p { margin:0; color:var(--dim); font-size:15px; }
+  footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--dim); font-size:14px; }
+  footer .wrap { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./">[STUDIO NAME]</a>
+    <nav><a href="#games">Games</a><a href="#contact">Contact</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hall" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="tag">Independent game studio</div>
+      <h1>Small games,<br><span>big hallways.</span></h1>
+      <p class="lead">[STUDIO NAME] is a one-person studio making games for Android. Our first game is Hall Monitor, an idle shooter where you blast your way down an endless hallway.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.hallmonitor.game">Get Hall Monitor on Google Play</a>
+      <a class="btn ghost" href="#contact">Contact us</a>
+    </div>
+  </div>
+
+  <section id="games">
+    <div class="wrap">
+      <h2>Hall Monitor</h2>
+      <p style="color:#cdd5e3;max-width:680px">An FPS-inspired idle game for Android. Your weapons fire on their own; tap to help, upgrade your arsenal and push deeper round after round through dozens of places, from lava foundries to haunted mansions and a disco.</p>
+      <div class="grid" style="margin-top:20px">
+        <div class="card"><h3>Idle shooting</h3><p>Your weapons keep firing even while you're away, and every round brings tougher enemies and bigger bosses.</p></div>
+        <div class="card"><h3>Lots to collect</h3><p>Gear, pets, stickers, boss trophies, and friends who join you in the Tower.</p></div>
+        <div class="card"><h3>Side modes</h3><p>Minigames, a Cove to fish and relax in, a Music Studio, and the Tower's auto-battles.</p></div>
+        <div class="card"><h3>Play together</h3><p>Team up with a friend on the same Wi-Fi network.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p style="color:#cdd5e3">Questions, bug reports or feedback about our games: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 [STUDIO NAME]. All rights reserved.</span>
+    <span><a href="privacy.html">Privacy Policy</a></span>
+  </div>
+</footer>
+</body>
+</html>
